@@ -43,6 +43,16 @@ pip install -e .
 See `notebooks/` for a complete Colab-ready walkthrough, including
 installing on a fresh Colab runtime.
 
+## Notebooks
+
+| Notebook | Open in Colab |
+| --- | --- |
+| 01 - Getting Started | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/rendervous/HaloRT/blob/main/notebooks/01_getting_started.ipynb) |
+| 02 - Parameter Sweep | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/rendervous/HaloRT/blob/main/notebooks/02_parameter_sweep.ipynb) |
+
+The notebooks themselves (`notebooks/*.ipynb`) must be pushed to the
+repository for the Colab links above to resolve.
+
 ## Quick start
 
 ```python
