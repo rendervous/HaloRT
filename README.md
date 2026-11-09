@@ -29,16 +29,17 @@ prebuilt wheels, so on a machine with a Vulkan-capable GPU:
 
 ```bash
 pip install rendervous   # pulls in vulky automatically
-pip install git+https://github.com/rendervous/HaloRT.git
-```
-
-or, for local development:
-
-```bash
 git clone https://github.com/rendervous/HaloRT.git
 cd HaloRT
 pip install -e .
 ```
+
+`pip install git+https://github.com/rendervous/HaloRT.git` on its own
+installs the `halort` Python package but **not** the `pretrained/`
+weights - that folder isn't part of the package, it's a sibling folder in
+the repo. Clone the repo (as above) if you want to use the checkpoints
+under `pretrained/` directly; otherwise fetch them yourself (e.g. from the
+raw GitHub URL) and point `load_pretrained(...)` at wherever you put them.
 
 See `notebooks/` for a complete Colab-ready walkthrough, including
 installing on a fresh Colab runtime.
