@@ -65,15 +65,16 @@
 
 <section id="examples">
     <h2>Examples</h2>
-    <figure>
-        <img src="assets/comparison_table.png" alt="Comparison table across 7 scenes: Reference, Denoiser, DenoiserX, HaloRT (Ours)">
-        <figcaption>
-            Reference / Denoiser / DenoiserX / HaloRT (Ours) across seven
-            cloud volumes under different real HDR environment maps, with
-            PSNR relative to a converged path-traced reference shown under
-            each render.
-        </figcaption>
-    </figure>
+    <p class="note">
+        Click a scene below, then move your mouse over any image to see a
+        synced zoomed-in crop of that exact spot across all methods.
+    </p>
+    <div id="explorer">
+        <div class="scene-switcher" id="scene-switcher"></div>
+        <div class="explorer-row" id="explorer-row"></div>
+        <p class="note" id="explorer-hint">Hover any image above to zoom in.</p>
+        <div class="zoom-row" id="zoom-row"></div>
+    </div>
 </section>
 
 <section id="setup">
@@ -127,5 +128,6 @@ with torch.no_grad():
     <p><a href="https://github.com/rendervous/HaloRT">github.com/rendervous/HaloRT</a></p>
 </footer>
 
+<script src="explorer.js"></script>
 </body>
 </html>
