@@ -1,0 +1,5 @@
+torch>=2.0
+numpy
+einops
+packaging
+rendervous>=0.0.4
