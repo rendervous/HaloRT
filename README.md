@@ -29,17 +29,13 @@ prebuilt wheels, so on a machine with a Vulkan-capable GPU:
 
 ```bash
 pip install rendervous   # pulls in vulky automatically
-git clone https://github.com/rendervous/HaloRT.git
-cd HaloRT
-pip install -e .
+pip install git+https://github.com/rendervous/HaloRT.git
 ```
 
-`pip install git+https://github.com/rendervous/HaloRT.git` on its own
-installs the `halort` Python package but **not** the `pretrained/`
-weights - that folder isn't part of the package, it's a sibling folder in
-the repo. Clone the repo (as above) if you want to use the checkpoints
-under `pretrained/` directly; otherwise fetch them yourself (e.g. from the
-raw GitHub URL) and point `load_pretrained(...)` at wherever you put them.
+The pretrained weights are bundled as package data (see "Pretrained
+weights" below), so this one command is enough - no repo clone needed.
+For local development, `git clone` + `pip install -e .` works the same
+way.
 
 See `notebooks/` for a complete Colab-ready walkthrough, including
 installing on a fresh Colab runtime.
@@ -63,8 +59,9 @@ import halort
 
 rdv.device(0)
 
+# bundled pretrained weights are loaded automatically (load_pretrained=True
+# by default) - the returned net is ready to render.
 net = halort.create_scatnet("halort", width=512, height=512)
-net.load_pretrained("pretrained/halo_dir.pt", "pretrained/halo_env.pt")
 
 # scene setup - same API for all three model types (inherited from ScatNet)
 net.set_extinction(cloud_density_grid, density_scale=400.0)   # (D,H,W) or (D,H,W,1) torch tensor
@@ -79,19 +76,27 @@ with torch.no_grad():
 ```
 
 `create_scatnet(model=...)` accepts `'denoiser'`, `'denoiserx'`, or
-`'halort'`. Denoiser/DenoiserX use `net.load_pretrained("pretrained/denoiser.pt")`
-(single file) and `net.capture_reconstructed_radiance()` instead.
+`'halort'`. Denoiser/DenoiserX use `net.capture_reconstructed_radiance()`
+instead of `reconstruct_radiance_fused()`. Pass `load_pretrained=False` to
+get an untrained net and load your own checkpoint via
+`net.load_pretrained(...)` (accepts a path, an already-loaded state_dict,
+or a full training-checkpoint dict with a `'model'` key).
 
 ## Pretrained weights
 
-`pretrained/` holds bare `state_dict`s only (no optimizer/scheduler/step
-state from training) - small (~4.5 MB each):
+Bundled as package data under `halort/pretrained/` - bare `state_dict`s
+only (no optimizer/scheduler/step state from training), small (~4.5 MB
+each), installed automatically by `pip install` (no repo clone needed):
 
 | File | Model |
 | --- | --- |
 | `halo_dir.pt` + `halo_env.pt` | HaloRT (both required together) |
 | `denoiser.pt` | Denoiser |
 | `denoiserx.pt` | DenoiserX |
+
+`halort.PRETRAINED_DIR` resolves to this directory at runtime (wherever
+the package ended up installed); `halort.pretrained_path(filename)` joins
+a filename onto it.
 
 ## Cloud volume datasets
 
