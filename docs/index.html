@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HaloRT - Real-Time Volumetric Light Transport Inference without a Path</title>
+<meta name="description" content="Real-Time Volumetric Light Transport Inference without a Path - HaloRT project page">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+
+<header class="hero">
+    <h1 class="title">Real-Time Volumetric Light Transport Inference<br>without a Path</h1>
+    <p class="authors">L. Leonard<sup>1</sup> and R. Westermann<sup>1</sup></p>
+    <p class="affiliations"><sup>1</sup> Technical University of Munich, Germany</p>
+
+    <div class="badge-row">
+        <a class="badge" href="https://github.com/rendervous/HaloRT">GitHub Repository</a>
+        <span class="badge disabled">Paper (preprint coming soon)</span>
+    </div>
+</header>
+
+<section id="abstract">
+    <h2>Abstract</h2>
+    <p class="abstract">
+        We present a real-time method for reconstructing fully integrated pixel
+        radiance in rendered volumetric media under direct and ambient
+        environmental illumination, using compact, low-cost scene features and
+        statistics. Unlike Monte Carlo denoising pipelines for volumetric
+        rendering, which depend on computationally expensive path-traced
+        radiance estimates, our approach directly infers the final
+        light-transport solution from inexpensive primary-ray and environment
+        sample evaluations. We show that these features form a near-sufficient
+        representation of the scene, enabling accurate reconstruction at
+        substantially lower computational cost. Using an attention-augmented
+        image-to-image network, we demonstrate that complete pixel radiance can
+        be inferred directly from these auxiliary features, without requiring
+        the original radiance signal. Operating in image space also provides a
+        more stable computational cost as the camera zooms into or out of the
+        volume, with substantially less dependence on volume density than
+        approaches based on explicit multiple-scattering simulation. We
+        demonstrate real-time performance and high reconstruction accuracy in
+        challenging volumetric cloud scenarios.
+    </p>
+</section>
+
+<section id="video">
+    <h2>Video</h2>
+    <figure>
+        <video controls preload="metadata" poster="">
+            <source src="assets/methods_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <figcaption>
+            Live comparison as the camera orbits and zooms: HaloRT
+            (top-left) against DenoiserX (bottom-left) and a quick 4-sample
+            reference (bottom-right), with HaloRT's own direct-transmittance
+            / environment-sample input features visualized (top-right). The
+            camera periodically freezes and sweeps in a 4096-sample
+            converged path-traced reference for comparison.
+        </figcaption>
+    </figure>
+</section>
+
+<section id="examples">
+    <h2>Examples</h2>
+    <figure>
+        <img src="assets/comparison_table.png" alt="Comparison table across 7 scenes: Reference, Denoiser, DenoiserX, HaloRT (Ours)">
+        <figcaption>
+            Reference / Denoiser / DenoiserX / HaloRT (Ours) across seven
+            cloud volumes under different real HDR environment maps, with
+            PSNR relative to a converged path-traced reference shown under
+            each render.
+        </figcaption>
+    </figure>
+</section>
+
+<section id="setup">
+    <h2>Setup</h2>
+    <p>
+        HaloRT, Denoiser and DenoiserX are all available as a minimal,
+        standalone Python package built on
+        <a href="https://github.com/rendervous/rdv_project">rendervous</a>
+        (Vulkan-CUDA interop rendering) and
+        <a href="https://github.com/rendervous/vk_project">vulky</a>
+        (raw Vulkan access), both published on PyPI with prebuilt wheels.
+    </p>
+    <div class="setup-steps">
+        <div class="setup-step">
+            <h3>1. Install</h3>
+            <pre><code>pip install rendervous
+pip install git+https://github.com/rendervous/HaloRT.git</code></pre>
+        </div>
+        <div class="setup-step">
+            <h3>2. Render</h3>
+            <pre><code>import torch, rdv, halort
+
+rdv.device(0)
+
+# pretrained weights are bundled and loaded automatically
+net = halort.create_scatnet("halort", width=512, height=512)
+
+net.set_extinction(cloud_density_grid, density_scale=400.0)
+net.set_scattering_albedo((0.99, 0.99, 0.99))
+net.set_anisotropy(0.3)
+net.set_environment(hdr_environment_tensor)
+net.set_camera(0, origin=(0, 0.5, 2.5), target=(0, 0, 0), up=(0, 1, 0))
+net.set_light(light_direction=(0, 1, 0), light_intensity=(1, 1, 1))
+
+with torch.no_grad():
+    radiance = net.reconstruct_radiance_fused()</code></pre>
+        </div>
+    </div>
+    <p class="note">
+        See the repository's
+        <a href="https://github.com/rendervous/HaloRT#readme">README</a>
+        and <a href="https://github.com/rendervous/HaloRT/tree/main/notebooks">Colab notebooks</a>
+        for a complete walkthrough, including scene setup from scratch.
+    </p>
+</section>
+
+</main>
+
+<footer>
+    <p>Technical University of Munich</p>
+    <p><a href="https://github.com/rendervous/HaloRT">github.com/rendervous/HaloRT</a></p>
+</footer>
+
+</body>
+</html>
