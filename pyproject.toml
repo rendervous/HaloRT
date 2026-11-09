@@ -23,4 +23,4 @@ notebooks = ["matplotlib", "pillow"]
 include = ["halort*"]
 
 [tool.setuptools.package-data]
-halort = ["*.h", "pretrained/*.pt"]
+halort = ["*.h", "pretrained/*.pt", "sample_clouds/*.pt"]

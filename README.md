@@ -100,8 +100,18 @@ a filename onto it.
 
 ## Cloud volume datasets
 
-A reference to a Hugging Face dataset with additional cloud volumes
-suitable for rendering with these models will be added here.
+The notebooks use real cloud volumes bundled with the package (two
+clouds, downsampled to a max dimension of 160 voxels, under
+`halort/sample_clouds/`) via:
+
+```python
+cloud = halort.load_sample_cloud(0)   # or 487 - see halort.SAMPLE_CLOUD_IDS
+```
+
+For more variety or full resolution, see the
+[compact_clouds](https://huggingface.co/datasets/rendervous-project/compact_clouds)
+dataset on Hugging Face (500 clouds, `clouds_500.h5`, same per-cloud
+`(D, H, W, 1)` layout), which the bundled samples were downsampled from.
 
 ## License
 
