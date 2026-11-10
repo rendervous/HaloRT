@@ -77,6 +77,30 @@
     </div>
 </section>
 
+<section id="features">
+    <h2>Features</h2>
+    <p class="note">
+        Drag the slider to compare HaloRT's final reconstruction against one
+        of its own input features (the compact, low-cost scene statistics
+        the network reconstructs radiance from - see the abstract above).
+        Pick a feature below, or jump to a random example scene.
+    </p>
+    <div id="feature-explorer">
+        <div class="feature-controls">
+            <div class="scene-switcher" id="feature-switcher"></div>
+            <button class="scene-btn random-btn" id="feature-random-btn">&#8635; Random scene</button>
+        </div>
+        <div class="compare-slider" id="feature-slider">
+            <img class="compare-img compare-base" id="feature-base-img" alt="Reconstruction">
+            <img class="compare-img compare-top" id="feature-top-img" alt="Feature">
+            <div class="compare-divider" id="feature-divider"></div>
+            <div class="compare-label compare-label-left">Reconstruction</div>
+            <div class="compare-label compare-label-right" id="feature-label-right"></div>
+        </div>
+        <p class="explorer-caption" id="feature-scene-name"></p>
+    </div>
+</section>
+
 <section id="setup">
     <h2>Setup</h2>
     <p>
@@ -129,5 +153,6 @@ with torch.no_grad():
 </footer>
 
 <script src="explorer.js"></script>
+<script src="feature-slider.js"></script>
 </body>
 </html>

@@ -1,0 +1,247 @@
+[
+  {
+    "name": "syferfontein",
+    "features": [
+      {
+        "name": "reconstruction",
+        "label": "Reconstruction",
+        "image": "syferfontein_reconstruction.png"
+      },
+      {
+        "name": "depth",
+        "label": "Depth",
+        "image": "syferfontein_depth.png"
+      },
+      {
+        "name": "transmittance",
+        "label": "Transmittance",
+        "image": "syferfontein_transmittance.png"
+      },
+      {
+        "name": "albedo",
+        "label": "Scattering albedo",
+        "image": "syferfontein_albedo.png"
+      },
+      {
+        "name": "direct_light",
+        "label": "Direct light (NEE)",
+        "image": "syferfontein_direct_light.png"
+      },
+      {
+        "name": "environment",
+        "label": "Environment (NEE)",
+        "image": "syferfontein_environment.png"
+      }
+    ]
+  },
+  {
+    "name": "kiara_sunset",
+    "features": [
+      {
+        "name": "reconstruction",
+        "label": "Reconstruction",
+        "image": "kiara_sunset_reconstruction.png"
+      },
+      {
+        "name": "depth",
+        "label": "Depth",
+        "image": "kiara_sunset_depth.png"
+      },
+      {
+        "name": "transmittance",
+        "label": "Transmittance",
+        "image": "kiara_sunset_transmittance.png"
+      },
+      {
+        "name": "albedo",
+        "label": "Scattering albedo",
+        "image": "kiara_sunset_albedo.png"
+      },
+      {
+        "name": "direct_light",
+        "label": "Direct light (NEE)",
+        "image": "kiara_sunset_direct_light.png"
+      },
+      {
+        "name": "environment",
+        "label": "Environment (NEE)",
+        "image": "kiara_sunset_environment.png"
+      }
+    ]
+  },
+  {
+    "name": "kloofendal",
+    "features": [
+      {
+        "name": "reconstruction",
+        "label": "Reconstruction",
+        "image": "kloofendal_reconstruction.png"
+      },
+      {
+        "name": "depth",
+        "label": "Depth",
+        "image": "kloofendal_depth.png"
+      },
+      {
+        "name": "transmittance",
+        "label": "Transmittance",
+        "image": "kloofendal_transmittance.png"
+      },
+      {
+        "name": "albedo",
+        "label": "Scattering albedo",
+        "image": "kloofendal_albedo.png"
+      },
+      {
+        "name": "direct_light",
+        "label": "Direct light (NEE)",
+        "image": "kloofendal_direct_light.png"
+      },
+      {
+        "name": "environment",
+        "label": "Environment (NEE)",
+        "image": "kloofendal_environment.png"
+      }
+    ]
+  },
+  {
+    "name": "kloppenheim",
+    "features": [
+      {
+        "name": "reconstruction",
+        "label": "Reconstruction",
+        "image": "kloppenheim_reconstruction.png"
+      },
+      {
+        "name": "depth",
+        "label": "Depth",
+        "image": "kloppenheim_depth.png"
+      },
+      {
+        "name": "transmittance",
+        "label": "Transmittance",
+        "image": "kloppenheim_transmittance.png"
+      },
+      {
+        "name": "albedo",
+        "label": "Scattering albedo",
+        "image": "kloppenheim_albedo.png"
+      },
+      {
+        "name": "direct_light",
+        "label": "Direct light (NEE)",
+        "image": "kloppenheim_direct_light.png"
+      },
+      {
+        "name": "environment",
+        "label": "Environment (NEE)",
+        "image": "kloppenheim_environment.png"
+      }
+    ]
+  },
+  {
+    "name": "lonely_road",
+    "features": [
+      {
+        "name": "reconstruction",
+        "label": "Reconstruction",
+        "image": "lonely_road_reconstruction.png"
+      },
+      {
+        "name": "depth",
+        "label": "Depth",
+        "image": "lonely_road_depth.png"
+      },
+      {
+        "name": "transmittance",
+        "label": "Transmittance",
+        "image": "lonely_road_transmittance.png"
+      },
+      {
+        "name": "albedo",
+        "label": "Scattering albedo",
+        "image": "lonely_road_albedo.png"
+      },
+      {
+        "name": "direct_light",
+        "label": "Direct light (NEE)",
+        "image": "lonely_road_direct_light.png"
+      },
+      {
+        "name": "environment",
+        "label": "Environment (NEE)",
+        "image": "lonely_road_environment.png"
+      }
+    ]
+  },
+  {
+    "name": "moonless_golf",
+    "features": [
+      {
+        "name": "reconstruction",
+        "label": "Reconstruction",
+        "image": "moonless_golf_reconstruction.png"
+      },
+      {
+        "name": "depth",
+        "label": "Depth",
+        "image": "moonless_golf_depth.png"
+      },
+      {
+        "name": "transmittance",
+        "label": "Transmittance",
+        "image": "moonless_golf_transmittance.png"
+      },
+      {
+        "name": "albedo",
+        "label": "Scattering albedo",
+        "image": "moonless_golf_albedo.png"
+      },
+      {
+        "name": "direct_light",
+        "label": "Direct light (NEE)",
+        "image": "moonless_golf_direct_light.png"
+      },
+      {
+        "name": "environment",
+        "label": "Environment (NEE)",
+        "image": "moonless_golf_environment.png"
+      }
+    ]
+  },
+  {
+    "name": "noon_grass",
+    "features": [
+      {
+        "name": "reconstruction",
+        "label": "Reconstruction",
+        "image": "noon_grass_reconstruction.png"
+      },
+      {
+        "name": "depth",
+        "label": "Depth",
+        "image": "noon_grass_depth.png"
+      },
+      {
+        "name": "transmittance",
+        "label": "Transmittance",
+        "image": "noon_grass_transmittance.png"
+      },
+      {
+        "name": "albedo",
+        "label": "Scattering albedo",
+        "image": "noon_grass_albedo.png"
+      },
+      {
+        "name": "direct_light",
+        "label": "Direct light (NEE)",
+        "image": "noon_grass_direct_light.png"
+      },
+      {
+        "name": "environment",
+        "label": "Environment (NEE)",
+        "image": "noon_grass_environment.png"
+      }
+    ]
+  }
+]
