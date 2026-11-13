@@ -8,9 +8,24 @@
         "image": "syferfontein_reconstruction.png"
       },
       {
-        "name": "depth",
-        "label": "Depth",
-        "image": "syferfontein_depth.png"
+        "name": "crossing1",
+        "label": "Crossing (\u03c4=4.0)",
+        "image": "syferfontein_crossing1.png"
+      },
+      {
+        "name": "crossing2",
+        "label": "Crossing (\u03c4=1.0)",
+        "image": "syferfontein_crossing2.png"
+      },
+      {
+        "name": "crossing3",
+        "label": "Crossing (\u03c4=0.25)",
+        "image": "syferfontein_crossing3.png"
+      },
+      {
+        "name": "crossing4",
+        "label": "Crossing (\u03c4=0.125)",
+        "image": "syferfontein_crossing4.png"
       },
       {
         "name": "transmittance",
@@ -43,9 +58,24 @@
         "image": "kiara_sunset_reconstruction.png"
       },
       {
-        "name": "depth",
-        "label": "Depth",
-        "image": "kiara_sunset_depth.png"
+        "name": "crossing1",
+        "label": "Crossing (\u03c4=4.0)",
+        "image": "kiara_sunset_crossing1.png"
+      },
+      {
+        "name": "crossing2",
+        "label": "Crossing (\u03c4=1.0)",
+        "image": "kiara_sunset_crossing2.png"
+      },
+      {
+        "name": "crossing3",
+        "label": "Crossing (\u03c4=0.25)",
+        "image": "kiara_sunset_crossing3.png"
+      },
+      {
+        "name": "crossing4",
+        "label": "Crossing (\u03c4=0.125)",
+        "image": "kiara_sunset_crossing4.png"
       },
       {
         "name": "transmittance",
@@ -78,9 +108,24 @@
         "image": "kloofendal_reconstruction.png"
       },
       {
-        "name": "depth",
-        "label": "Depth",
-        "image": "kloofendal_depth.png"
+        "name": "crossing1",
+        "label": "Crossing (\u03c4=4.0)",
+        "image": "kloofendal_crossing1.png"
+      },
+      {
+        "name": "crossing2",
+        "label": "Crossing (\u03c4=1.0)",
+        "image": "kloofendal_crossing2.png"
+      },
+      {
+        "name": "crossing3",
+        "label": "Crossing (\u03c4=0.25)",
+        "image": "kloofendal_crossing3.png"
+      },
+      {
+        "name": "crossing4",
+        "label": "Crossing (\u03c4=0.125)",
+        "image": "kloofendal_crossing4.png"
       },
       {
         "name": "transmittance",
@@ -113,9 +158,24 @@
         "image": "kloppenheim_reconstruction.png"
       },
       {
-        "name": "depth",
-        "label": "Depth",
-        "image": "kloppenheim_depth.png"
+        "name": "crossing1",
+        "label": "Crossing (\u03c4=4.0)",
+        "image": "kloppenheim_crossing1.png"
+      },
+      {
+        "name": "crossing2",
+        "label": "Crossing (\u03c4=1.0)",
+        "image": "kloppenheim_crossing2.png"
+      },
+      {
+        "name": "crossing3",
+        "label": "Crossing (\u03c4=0.25)",
+        "image": "kloppenheim_crossing3.png"
+      },
+      {
+        "name": "crossing4",
+        "label": "Crossing (\u03c4=0.125)",
+        "image": "kloppenheim_crossing4.png"
       },
       {
         "name": "transmittance",
@@ -148,9 +208,24 @@
         "image": "lonely_road_reconstruction.png"
       },
       {
-        "name": "depth",
-        "label": "Depth",
-        "image": "lonely_road_depth.png"
+        "name": "crossing1",
+        "label": "Crossing (\u03c4=4.0)",
+        "image": "lonely_road_crossing1.png"
+      },
+      {
+        "name": "crossing2",
+        "label": "Crossing (\u03c4=1.0)",
+        "image": "lonely_road_crossing2.png"
+      },
+      {
+        "name": "crossing3",
+        "label": "Crossing (\u03c4=0.25)",
+        "image": "lonely_road_crossing3.png"
+      },
+      {
+        "name": "crossing4",
+        "label": "Crossing (\u03c4=0.125)",
+        "image": "lonely_road_crossing4.png"
       },
       {
         "name": "transmittance",
@@ -183,9 +258,24 @@
         "image": "moonless_golf_reconstruction.png"
       },
       {
-        "name": "depth",
-        "label": "Depth",
-        "image": "moonless_golf_depth.png"
+        "name": "crossing1",
+        "label": "Crossing (\u03c4=4.0)",
+        "image": "moonless_golf_crossing1.png"
+      },
+      {
+        "name": "crossing2",
+        "label": "Crossing (\u03c4=1.0)",
+        "image": "moonless_golf_crossing2.png"
+      },
+      {
+        "name": "crossing3",
+        "label": "Crossing (\u03c4=0.25)",
+        "image": "moonless_golf_crossing3.png"
+      },
+      {
+        "name": "crossing4",
+        "label": "Crossing (\u03c4=0.125)",
+        "image": "moonless_golf_crossing4.png"
       },
       {
         "name": "transmittance",
@@ -218,9 +308,24 @@
         "image": "noon_grass_reconstruction.png"
       },
       {
-        "name": "depth",
-        "label": "Depth",
-        "image": "noon_grass_depth.png"
+        "name": "crossing1",
+        "label": "Crossing (\u03c4=4.0)",
+        "image": "noon_grass_crossing1.png"
+      },
+      {
+        "name": "crossing2",
+        "label": "Crossing (\u03c4=1.0)",
+        "image": "noon_grass_crossing2.png"
+      },
+      {
+        "name": "crossing3",
+        "label": "Crossing (\u03c4=0.25)",
+        "image": "noon_grass_crossing3.png"
+      },
+      {
+        "name": "crossing4",
+        "label": "Crossing (\u03c4=0.125)",
+        "image": "noon_grass_crossing4.png"
       },
       {
         "name": "transmittance",
