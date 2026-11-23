@@ -11,20 +11,26 @@
       {
         "name": "Denoiser",
         "image": "syferfontein_denoiser.png",
-        "psnr": 36.98,
-        "time_ms": 29.93
+        "psnr": 36.86,
+        "time_ms": 30.27
       },
       {
         "name": "DenoiserX",
         "image": "syferfontein_denoiserx.png",
-        "psnr": 38.92,
-        "time_ms": 31.02
+        "psnr": 38.89,
+        "time_ms": 30.22
       },
       {
         "name": "HaloRT (ours)",
         "image": "syferfontein_halort_ours.png",
-        "psnr": 37.52,
-        "time_ms": 17.0
+        "psnr": 37.0,
+        "time_ms": 16.68
+      },
+      {
+        "name": "HaloRTX",
+        "image": "syferfontein_halortx.png",
+        "psnr": 36.76,
+        "time_ms": 17.37
       }
     ]
   },
@@ -40,20 +46,26 @@
       {
         "name": "Denoiser",
         "image": "kiara_sunset_denoiser.png",
-        "psnr": 35.85,
-        "time_ms": 30.04
+        "psnr": 35.95,
+        "time_ms": 29.63
       },
       {
         "name": "DenoiserX",
         "image": "kiara_sunset_denoiserx.png",
-        "psnr": 40.22,
-        "time_ms": 30.51
+        "psnr": 40.23,
+        "time_ms": 30.33
       },
       {
         "name": "HaloRT (ours)",
         "image": "kiara_sunset_halort_ours.png",
-        "psnr": 37.88,
-        "time_ms": 16.92
+        "psnr": 37.45,
+        "time_ms": 16.38
+      },
+      {
+        "name": "HaloRTX",
+        "image": "kiara_sunset_halortx.png",
+        "psnr": 38.36,
+        "time_ms": 17.52
       }
     ]
   },
@@ -69,20 +81,26 @@
       {
         "name": "Denoiser",
         "image": "kloofendal_denoiser.png",
-        "psnr": 35.94,
-        "time_ms": 20.53
+        "psnr": 35.71,
+        "time_ms": 20.59
       },
       {
         "name": "DenoiserX",
         "image": "kloofendal_denoiserx.png",
         "psnr": 40.55,
-        "time_ms": 21.32
+        "time_ms": 20.9
       },
       {
         "name": "HaloRT (ours)",
         "image": "kloofendal_halort_ours.png",
-        "psnr": 36.73,
-        "time_ms": 16.84
+        "psnr": 37.28,
+        "time_ms": 16.36
+      },
+      {
+        "name": "HaloRTX",
+        "image": "kloofendal_halortx.png",
+        "psnr": 37.6,
+        "time_ms": 17.03
       }
     ]
   },
@@ -98,20 +116,26 @@
       {
         "name": "Denoiser",
         "image": "kloppenheim_denoiser.png",
-        "psnr": 38.75,
-        "time_ms": 29.18
+        "psnr": 38.76,
+        "time_ms": 28.03
       },
       {
         "name": "DenoiserX",
         "image": "kloppenheim_denoiserx.png",
-        "psnr": 41.46,
-        "time_ms": 29.05
+        "psnr": 41.43,
+        "time_ms": 29.12
       },
       {
         "name": "HaloRT (ours)",
         "image": "kloppenheim_halort_ours.png",
-        "psnr": 39.7,
-        "time_ms": 16.86
+        "psnr": 38.24,
+        "time_ms": 16.32
+      },
+      {
+        "name": "HaloRTX",
+        "image": "kloppenheim_halortx.png",
+        "psnr": 39.75,
+        "time_ms": 16.73
       }
     ]
   },
@@ -127,20 +151,26 @@
       {
         "name": "Denoiser",
         "image": "lonely_road_denoiser.png",
-        "psnr": 37.77,
-        "time_ms": 31.43
+        "psnr": 37.66,
+        "time_ms": 31.19
       },
       {
         "name": "DenoiserX",
         "image": "lonely_road_denoiserx.png",
-        "psnr": 39.83,
-        "time_ms": 32.44
+        "psnr": 40.04,
+        "time_ms": 32.03
       },
       {
         "name": "HaloRT (ours)",
         "image": "lonely_road_halort_ours.png",
-        "psnr": 30.69,
-        "time_ms": 17.35
+        "psnr": 30.6,
+        "time_ms": 16.74
+      },
+      {
+        "name": "HaloRTX",
+        "image": "lonely_road_halortx.png",
+        "psnr": 32.7,
+        "time_ms": 17.37
       }
     ]
   },
@@ -156,20 +186,26 @@
       {
         "name": "Denoiser",
         "image": "moonless_golf_denoiser.png",
-        "psnr": 40.47,
-        "time_ms": 71.2
+        "psnr": 40.43,
+        "time_ms": 40.04
       },
       {
         "name": "DenoiserX",
         "image": "moonless_golf_denoiserx.png",
-        "psnr": 42.27,
-        "time_ms": 75.39
+        "psnr": 42.01,
+        "time_ms": 41.14
       },
       {
         "name": "HaloRT (ours)",
         "image": "moonless_golf_halort_ours.png",
-        "psnr": 39.86,
-        "time_ms": 21.9
+        "psnr": 39.12,
+        "time_ms": 17.2
+      },
+      {
+        "name": "HaloRTX",
+        "image": "moonless_golf_halortx.png",
+        "psnr": 41.26,
+        "time_ms": 18.53
       }
     ]
   },
@@ -185,20 +221,26 @@
       {
         "name": "Denoiser",
         "image": "noon_grass_denoiser.png",
-        "psnr": 35.41,
-        "time_ms": 31.33
+        "psnr": 35.46,
+        "time_ms": 30.16
       },
       {
         "name": "DenoiserX",
         "image": "noon_grass_denoiserx.png",
-        "psnr": 36.68,
-        "time_ms": 31.68
+        "psnr": 36.91,
+        "time_ms": 30.93
       },
       {
         "name": "HaloRT (ours)",
         "image": "noon_grass_halort_ours.png",
-        "psnr": 33.06,
-        "time_ms": 17.29
+        "psnr": 34.02,
+        "time_ms": 16.87
+      },
+      {
+        "name": "HaloRTX",
+        "image": "noon_grass_halortx.png",
+        "psnr": 34.84,
+        "time_ms": 17.57
       }
     ]
   }
